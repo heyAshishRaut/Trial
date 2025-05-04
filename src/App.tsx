@@ -1,5 +1,5 @@
 // App.tsx
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./index.css"; // Tailwind CSS should be configured here
 
@@ -29,7 +29,7 @@ export default function App() {
                 animate={{ backgroundColor: sections[current].color }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
             >
-                {sections.map((section, index) => (
+                {sections.map((section) => (
                     <div
                         key={section.id}
                         className="h-screen w-full flex items-center justify-center snap-center text-white text-3xl font-bold"
